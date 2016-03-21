@@ -19,7 +19,7 @@
             </div>
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="page_home.html">Home</a></li>
+                    <li><a href="#article-editor" data-toggle="modal">Home</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bell"></i> <span class="notification-title">Notifications</span><span class="badge badge-danger notification-badge">6</span></a>
                         <div class="dropdown-menu notification-menu">
@@ -52,4 +52,64 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="article-editor">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">List view</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="dd" id="list1">
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="1">
+                                            <div class="dd-handle">Item 1</div>
+                                        </li>
+                                        <li class="dd-item" data-id="2">
+                                            <div class="dd-handle">Item 2</div>
+                                        </li>
+                                        <li class="dd-item dd-collapsed" data-id="3">
+                                            <button data-action="collapse" type="button" style="display: none;">Collapse</button><button data-action="expand" type="button" style="display: block;">Expand</button>
+                                            <div class="dd-handle">Item 3</div>
+                                            <ol class="dd-list" style="display: none;">
+                                                <li class="dd-item" data-id="4">
+                                                    <div class="dd-handle">Item 4</div>
+                                                </li>
+                                                <li class="dd-item" data-id="5">
+                                                    <div class="dd-handle">Item 5</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li class="dd-item dd-collapsed" data-id="4">
+                                            <button data-action="collapse" type="button" style="display: none;">Collapse</button><button data-action="expand" type="button" style="display: block;">Expand</button>
+                                            <div class="dd-handle">Item 6</div>
+                                            <ol class="dd-list" style="display: none;">
+                                                <li class="dd-item" data-id="4">
+                                                    <div class="dd-handle">Item 7</div>
+                                                </li>
+                                                <li class="dd-item" data-id="5">
+                                                    <div class="dd-handle">Item 8</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </header>
+
+

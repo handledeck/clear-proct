@@ -24,14 +24,16 @@ namespace PartOfZtp
                       "~/Scripts/respond.js",
                       "~/Scripts/scripts.min.js",
                       "~/Scripts/lib/slimscroll/jquery.slimscroll.min.js",
-                      "~/Scripts/lib/tabdrop/bootstrap-tabdrop.js"));
+                      "~/Scripts/lib/tabdrop/bootstrap-tabdrop.js",
+                      "~/Scripts/lib/nestable/jquery.nestable.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/styles.css",
                       "~/Content/lib/font-awesome/font-awesome.min.css",
-                      "~/Content/lib/ionicons/ionicons.min.css")); 
+                      "~/Content/lib/ionicons/ionicons.min.css",
+                      "~/Content/lib/lists/lists.css")); 
 
         }
     }
